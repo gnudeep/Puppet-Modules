@@ -25,9 +25,9 @@
 #
 
 class esb::params {
-  $package_repo         = 'http://downloads.wso2.com'
+  $package_repo         = 'http://deep-puppet-master/packs'
   $depsync_svn_repo     = 'https://svn.appfactory.domain.com/wso2/repo/'
-  $local_package_dir    = '/mnt/packs'
+  $local_package_dir    = '/srv/packs'
 
   # Service subdomains
   $domain               = 'wso2.com'

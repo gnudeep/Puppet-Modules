@@ -23,7 +23,7 @@ define esb::start ($target, $owner) {
     environment => "JAVA_HOME=${java_home}",
     unless      => "test -f ${target}/wso2carbon.lck",
     command     => "touch ${target}/wso2carbon.lck; ${target}/bin/wso2server.sh > /dev/null 2>&1 &",
-    creates     => "${target}/repository/wso2carbon.log",
+    creates     => "${target}/repository/log/wso2carbon.log",
   }
 }
 
